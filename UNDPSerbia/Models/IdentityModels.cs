@@ -21,6 +21,7 @@ namespace UNDPSerbia.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<ServiceContract> ServiceContracts { get; set; }
 
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
